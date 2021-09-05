@@ -1,0 +1,156 @@
+:root {
+	--dark-blue: #393E46;
+	--dark-blue-tp: #393E4688;
+	--blue: #00ADB5;
+	--blue-hover: #00ADE9;
+	--light-blue: #AAD8D3;
+	--gray: #EEEEEE;
+	--white: #F9F9F9;
+
+	--inter: 'Inter', sans-serif;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: var(--light-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	color: var(--dark-blue);
+	font-family: var(--inter);
+}
+
+.title {
+	margin: 30px 0;
+	text-align: center;
+}
+.container {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	width: 80%;
+	background-color: var(--white);
+	padding: 20px;
+	box-shadow: 9px 10px 21px -12px rgba(4,100,98,0.5);
+	margin-bottom: 20px;
+}
+
+@media (min-width: 975px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+		width: 70%;
+		height: 1050px;
+	}
+}
+
+.calc {
+	display: flex;
+	flex-direction: column;
+}
+
+.calculator-input {
+	padding: 20px;
+	height: 900px;
+}
+
+.calculator__form {
+}
+
+.calculator-result {
+	padding: 20px;
+	/* display: none; */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: 700;
+}
+
+.input-container {
+	margin: 10px 0;
+}
+
+.form__input {
+	background-color: var(--white);
+	margin: 10px 0;
+	width: 100%;
+	height: 30px;
+	padding: 20px 0px;
+	border: none;
+	border-bottom: 1px solid var(--dark-blue-tp);
+	outline: none;
+}
+
+.result {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	width: 100%;
+	height: 30px;
+	padding: 20px;
+	border: none;
+	border: 1px solid var(--gray);
+	outline: none;
+}
+
+.result-container {
+	margin: 10px 0;
+}
+
+.container-resultado {
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 15px 20px;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.button:hover {
+	background-color: var(--blue-hover);
+}
+
+@media (min-width: 975px){
+	.button {
+		width: 60%;
+	}
+}
+
+#submit-btn, #clear-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.margin10 {
+	margin-top: 10px;
+}
+
+.author {
+	color: var(--dark-blue-tp);
+}
+
+a {
+	color: var(--dark-blue-tp);
+}

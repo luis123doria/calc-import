@@ -4,9 +4,194 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/calculator-solid.png">
+
+
 	<title>Calculadora de Importaciones | luidrawly </title>
 </head>
 <body>
+
+
+	<h1 class="title">CALCULADORA DE IMPORTACIONES</h1>
+	<div class="container">
+		<div class="calc calculator-input">
+			<form action="" class="calculator__form">
+
+				<div class="input-container">
+					<label for="name" class="name">Nombre</label>
+					<input 
+						placeholder="NOMBRE DEL PRODUCTO" 
+						type="text" 
+						id="name" 
+						class="form__input"
+						>
+				</div>
+
+				<div class="input-container">
+					<label for="cml" class="cml">Cotización Mercado Local</label>
+					<input 
+						placeholder="PRECIO DE VENTA LOCAL" 
+						type="number" 
+						id="cml" 
+						class="form__input"
+						 >
+				</div>
+					
+				<div class="input-container">
+					<label for="pv" class="pv">Precio de Venta</label>
+					<input 
+						placeholder="PRECIO DE VENTA DEL PRODUCTO" 
+						type="number" 
+						id="pv" 
+						class="form__input"
+						 >	
+				</div>
+					
+				<div class="input-container">
+					<label for="pc" class="pc">Precio de Compra</label>
+					<input 
+						placeholder="PRECIO DE COMPRA DEL PRODUCTO" 
+						type="number" 
+						id="pc" 
+						class="form__input"
+						 >
+				</div>
+				
+				<div class="input-container">
+					<label for="unit" class="unit">Unidades</label>
+					<input 
+						placeholder="CANTIDAD DE UNIDADES" 
+						type="number" 
+						id="unit" 
+						class="form__input"
+						 >
+				</div>
+
+				<div class="input-container">
+					<label for="ce" class="ce">Envio</label>
+					<input 
+						placeholder="COSTO DE ENVÍO" 
+						type="number" 
+						id="ce" 
+						class="form__input"
+						 >
+				</div>
+					
+				<div class="input-container">
+					<label for="cs" class="cs">Seguro</label>
+					<input 
+						placeholder="COSTO DEL SEGURO" 
+						type="number" 
+						id="cs" 
+						class="form__input"
+						 >
+				</div>
+					
+				<div class="input-container">
+					<label for="ca" class="ca">Aduana</label>
+					<input 
+						placeholder="COSTO DE ADUANAS" 
+						type="number" 
+						id="ca" 
+						class="form__input"
+						 >
+				</div>
+					
+				<div class="input-container">
+					<label for="oc" class="oc">Otros Costos</label>
+					<input 
+						placeholder="OTROS COSTOS"
+						type="number" 
+						id="oc" 
+						class="form__input"
+						 >
+				</div>
+					
+				<div class="input-container" id="submit-btn">
+					<div id="submit" class="submit button margin10" onclick="verificar();"> Calcular</div>
+				</div>
+				
+
+			</form>
+		</div>
+
+		<div class="calc calculator-result">
+
+			<div class="container-resultado">
+				
+				<div class="result-container">
+					<p id="costoTotalDiv__titulo">Costo Total</p>
+					<div id="costoTotalDiv" class="result">
+						
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="costoUnidadDiv__titulo">Costo por Unidad</p>
+					<div id="costoUnidadDiv" class="result">
+						
+					</div>
+				</div>
+					
+				<div class="result-container">
+					<p id="gananciasUnidadDiv__titulo">Ganancias por Unidad</p>
+					<div id="gananciasUnidadDiv" class="result">
+						
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="gananciasUnidadPrecioVentaDiv__titulo">Ganancias por Unidad (Precio Venta)</p>
+					<div id="gananciasUnidadPrecioVentaDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="gananciasTotalesDiv__titulo">Ganancias Totales</p>
+					<div id="gananciasTotalesDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="gananciasTotalesPrecioVentaDiv__titulo">Ganancias Totales (Precio Venta)</p>
+					<div id="gananciasTotalesPrecioVentaDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="totalVentasDiv__titulo">Total de Ventas</p>
+					<div id="totalVentasDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="roiDiv__titulo">ROI </p>
+					<div id="roiDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="result-container">
+					<p id="margenGBrutoDiv__titulo">Margen de Ganancia en Bruto </p>
+					<div id="margenGBrutoDiv" class="result">
+
+					</div>
+				</div>
+
+				<div class="input-container" id="clear-btn">
+					<div id="clear" class="button" onclick="limpiar();">Limpiar</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<p class="author">Autor: Luisfer Doria, 2021. <a href="https://github.com/luis123doria">GitHub</a></p>
 	
 	<script src="js/app.js"></script>
 </body>
