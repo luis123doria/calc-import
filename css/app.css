@@ -27,6 +27,7 @@ html {
 body {
 	background: rgb(100,169,208);
 	background: linear-gradient(180deg, rgba(100,169,208,1) 0%, rgba(80,110,181,1) 100%);
+	background-image: url('../img/bg.png');
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -38,6 +39,7 @@ body {
 
 .title-page {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -45,6 +47,10 @@ body {
 @media (min-width: 975px){
 	.title-page {
 		display: flex;
+	}
+
+	.image {
+		display: none;
 	}
 }
 .title {
