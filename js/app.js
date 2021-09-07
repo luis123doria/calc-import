@@ -83,23 +83,6 @@ function calcular(){
 
 
 
-	// Ganancias Totales (GT)
-
-	// Operacion
-	let gananciasTotales = parseFloat(gananciasUnidad) * parseFloat(unidades);
-
-	// Crear los elementos y usar .appendChild 
-	let gananciasTotalesParrafo = document.createElement('P');
-	gananciasTotalesParrafo.classList.add('clear');
-	let gananciasTotalesTextNode = document.createTextNode("$" + gananciasTotales.toFixed(2));
-	gananciasTotalesParrafo.appendChild(gananciasTotalesTextNode);
-
-	// Agregar al DOM
-	let gananciasTotalesDiv = document.getElementById('gananciasTotalesDiv');
-	gananciasTotalesDiv.appendChild(gananciasTotalesParrafo);
-
-
-
 	// Ganancias Totales Precio Venta (GTPV)
 
 	// Operacion
@@ -207,7 +190,6 @@ function limpiar(){
 	let costoUnidadRemove = document.getElementById('costoUnidadDiv');
 	let gananciasUnidadRemove = document.getElementById('gananciasUnidadDiv');
 	let gananciasUnidadPrecioVentaRemove = document.getElementById('gananciasUnidadPrecioVentaDiv');
-	let gananciasTotalesRemove = document.getElementById('gananciasTotalesDiv');
 	let gananciasTotalesPrecioVentaRemove = document.getElementById('gananciasTotalesPrecioVentaDiv');
 	let totalVentasRemove = document.getElementById('totalVentasDiv');
 	let roiRemove = document.getElementById('roiDiv');
